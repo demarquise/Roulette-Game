@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rorlette
 {
-    public class Bets
+    public class Bets 
     {
         static public int[] numbers = { 0, 00, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19,
                                 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36 };
@@ -19,7 +19,7 @@ namespace Rorlette
         {
             
                 Console.WriteLine("What bet would you like to place");
-                Console.WriteLine("");
+                Console.WriteLine("                                                                          Chips-> " + chips);
                 Console.WriteLine("A| Numbers: the number of the bin            ");
                 Console.WriteLine("B| Evens/Odds: even or odd numbers           ");
                 Console.WriteLine("C| Reds/Blacks: red or black colored numbers ");
@@ -35,9 +35,7 @@ namespace Rorlette
                 //try puuting a for loop to generate an random number for between the arrays in the if else
                 Console.WriteLine("");
                 Console.Write("What bet would you like to make ????? : ");
-            bool game = false;
-            do
-            {
+           
 
                 string choice = Console.ReadLine();
 
@@ -61,13 +59,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("Congrats you Won you have a total of " + chips + "now");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("sorry you didnt win you have " + chips + " chips left");
-                        Console.WriteLine(" would you like to try again If to press enter ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "b")
                 {
@@ -88,13 +89,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("Congrats you Won you have a total of " + chips + " now ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("sorry you didnt win you have " + chips + " chips left");
-                        Console.WriteLine(" would you like to try again If to press enter ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "c")
                 {
@@ -115,13 +119,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("Congrats you Won you have a total of " + chips + " now ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("sorry you didnt win you have " + chips + " chips left");
-                        Console.WriteLine(" would you like to try again If to press enter ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "d")
                 {
@@ -143,14 +150,17 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips");
-
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
 
                     else
                     {
-                        Console.WriteLine("you lost ");
+                        Console.WriteLine("you lost you have " + chips + " chips left");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "e")
                 {
@@ -172,14 +182,17 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips");
-
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
 
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + "chips left");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                  
                 }
                 else if (choice.ToLower() == "f")
                 {
@@ -200,12 +213,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + "chips left");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                   
                 }
                 else if (choice.ToLower() == "g")
                 {
@@ -226,12 +243,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + " chips left ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "h")
                 {
@@ -252,12 +273,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + " chips left ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else if (choice.ToLower() == "i")
                 {
@@ -279,12 +304,16 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + " chips left ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                   
                 }
                 else if (choice.ToLower() == "j")
                 {
@@ -306,21 +335,25 @@ namespace Rorlette
                         answer = answer * 2;
                         chips = answer + chips;
                         Console.WriteLine("You won " + chips + " chips ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
                     else
                     {
                         Console.WriteLine("you lost you have " + chips + " chips left ");
+                        Console.WriteLine("");
+                        Console.WriteLine("Press Enter twice to Continue");
                     }
-                    game = true;
+                    
                 }
                 else
                 {
                     Console.WriteLine("choose a,b,c,d,e,f,g,h,i, or j");
+                    Console.WriteLine("");
+                    Console.WriteLine("Press Enter twice to Continue");
                 }
                 Console.ReadLine();
-                if (chips > 0)
-                    break;
-            }while( false) ;
+               
            
             
         }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Rorlette
 {
-    class Program
+    class Program : Bets
     {
 
 
         static void Main(string[] args)
         {
-
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Welcome to Roulette");
             Console.WriteLine("");
             do
@@ -22,8 +22,15 @@ namespace Rorlette
                 Console.ReadLine();
                 Console.Clear();
 
-            } while (true);
-            
+                
+
+            } while (chips > 0);
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Sorry you out of Chips go get some more then we can talk");
+            Console.ReadLine();
         }
 
     }

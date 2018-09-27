@@ -22,15 +22,24 @@ namespace Rorlette
 
             Console.WriteLine("What bet would you like to place");
             Console.WriteLine("                                                                          Chips-> " + chips);
-            Console.WriteLine("A| Numbers: the number of the bin            ");
+            Console.WriteLine("A| Numbers: the number of the bin  00--36          ");
+            Console.WriteLine("");
             Console.WriteLine("B| Evens/Odds: even or odd numbers           ");
+            Console.WriteLine("");
             Console.WriteLine("C| Reds/Blacks: red or black colored numbers ");
+            Console.WriteLine("");
             Console.WriteLine("D| Lows/Highs: low (1 – 18) or high (19 – 38) numbers");
+            Console.WriteLine("");
             Console.WriteLine("E| Dozens: row thirds, 1 – 12, 13 – 24, 25 – 36");
+            Console.WriteLine("");
             Console.WriteLine("F| Columns: first, second, or third columns");
+            Console.WriteLine("");
             Console.WriteLine("G| Street: rows,  1/2/3 or 22/23/24");
+            Console.WriteLine("");
             Console.WriteLine("H| 6 Numbers: double rows,  1/2/3/4/5/6 or 22/23/24/25/26/26");
+            Console.WriteLine("");
             Console.WriteLine("I| Split: at the edge of any two contiguous numbers,  1/2, 11/14, and 35/36");
+            Console.WriteLine("");
             Console.WriteLine("J| Corner: at the intersection of any four contiguous numbers, 1/2/4/5, or 23/24/26/27");
             //make it so bet they choose they can put money in 
             //implement math to subtract if they loose an add if they win or multiply 
@@ -119,7 +128,7 @@ namespace Rorlette
                 Console.Write("choose Red or Black : ");
                 string Twopicked = Console.ReadLine();
                 
-                Random AA = new Random();
+                
                 string nextpick = colors[AA.Next(colors.Length)];
 
                 Console.WriteLine("you landed on " + nextpick);

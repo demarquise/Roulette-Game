@@ -67,7 +67,7 @@ namespace Rorlette
 
                 Console.WriteLine("");
                 Console.WriteLine("");
-                Console.WriteLine("The number you landed on is " + pick2);
+                Console.WriteLine("You landed on " + pick2 + " " + colors[AA.Next(colors.Length)]);
                 if (pick2 == pick)
                 {
                     answer = answer * 35;
@@ -131,7 +131,7 @@ namespace Rorlette
                 
                 string nextpick = colors[AA.Next(colors.Length)];
 
-                Console.WriteLine("you landed on " + nextpick);
+                Console.WriteLine("you landed on " + numbers[AA.Next(numbers.Length)] + " " + nextpick );
                 Console.WriteLine("");
                 if (Twopicked == nextpick)
                 {
@@ -161,7 +161,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random AA = new Random();
                 int nextpick = numbers[AA.Next(numbers.Length)];
-                Console.WriteLine("you landed on " + nextpick);
+                Console.WriteLine("you landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((nextpick >= 1 && nextpick <= 18 && Twopicked == "lows")
                 || (nextpick >= 19 && nextpick <= 36 && Twopicked == "highs"))  //make it so i can do 1 threw 18
@@ -194,7 +194,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random AA = new Random();
                 int nextpick = numbers[AA.Next(numbers.Length)];
-                Console.WriteLine("you landed on " + nextpick);
+                Console.WriteLine("you landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
                 if (nextpick >= 1 && nextpick <= 12 && Twopicked.ToLower() == "first" ||
                     nextpick >= 13 && nextpick <= 24 && Twopicked.ToLower() == "second" ||
                     nextpick >= 25 && nextpick <= 36 && Twopicked.ToLower() == "third")
@@ -240,7 +240,7 @@ namespace Rorlette
                 }
                 else
                 {
-                    Console.WriteLine("you lost you have " + chips + "chips left");
+                    Console.WriteLine("you lost you have " + chips + " chips left");
                     Console.WriteLine("");
                     Console.WriteLine("Press Enter twice to Continue");
                 }
@@ -258,7 +258,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random GG = new Random();
                 int nextpick = numbers[GG.Next(numbers.Length)];
-                Console.WriteLine("You landed on " + nextpick);
+                Console.WriteLine("You landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((Twopicked.ToLower() == "a" && nextpick <= 3) || (Twopicked.ToLower() == "b" && nextpick >= 22 && nextpick <= 24))
                 {
@@ -288,7 +288,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random AA = new Random();
                 int nextpick = numbers[AA.Next(numbers.Length)];
-                Console.WriteLine("You landed on " + nextpick);
+                Console.WriteLine("You landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((Twopicked.ToLower() == "a" && nextpick <= 6) || (Twopicked.ToLower() == "b" &&
                    nextpick >= 22 && nextpick <= 26))
@@ -319,7 +319,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random AA = new Random();
                 int nextpick = numbers[AA.Next(numbers.Length)];
-                Console.WriteLine("You landed on " + nextpick);
+                Console.WriteLine("You landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((Twopicked.ToLower() == "a" && nextpick <= 2) || (Twopicked.ToLower() == "b" &&
                     nextpick == 11 || nextpick == 14) || (Twopicked.ToLower() == "c"
@@ -351,7 +351,7 @@ namespace Rorlette
                 string Twopicked = Console.ReadLine();
                 Random JJ = new Random();
                 int nextpick = numbers[JJ.Next(numbers.Length)];
-                Console.WriteLine("You landed on " + nextpick);
+                Console.WriteLine("You landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((Twopicked.ToLower() == "a" && nextpick <= 5) || (Twopicked.ToLower() == "b" &&
                     nextpick == 23 || nextpick == 24 || nextpick == 26

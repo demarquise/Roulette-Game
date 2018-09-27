@@ -15,6 +15,7 @@ namespace Rorlette
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Welcome to Roulette");
             Console.WriteLine("");
+
             do
             {
                 Bets mybet = new Bets();

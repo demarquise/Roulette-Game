@@ -12,7 +12,8 @@ namespace Rorlette
 
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Green;
+            
             Console.WriteLine("Welcome to Roulette");
             Console.WriteLine("");
 

@@ -56,7 +56,13 @@ namespace Rorlette
 
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer; 
+                while (!Int32.TryParse(Console.ReadLine(),out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
+                
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("Choose a number between 00-36 : ");
@@ -89,7 +95,12 @@ namespace Rorlette
                 Console.WriteLine("You choose Evens/Odds: even or odd numbers | the chances of winning are  47.4%  Payout is * 2");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("choose even or odd : ");
@@ -122,7 +133,12 @@ namespace Rorlette
                 Console.WriteLine(" You choose  Reds/Blacks: red or black colored numbers | the chances of winning are 47.4%  Payout is * 2");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("choose Red or Black : ");
@@ -154,7 +170,12 @@ namespace Rorlette
                 Console.WriteLine("You choose Lows/Highs: low (1 – 18) or high (19 – 38) numbers | chances of winning are 47.4%  Payout is * 2");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write(" Choose highs or lows  : ");
@@ -187,7 +208,12 @@ namespace Rorlette
                 Console.WriteLine(" You choose : Dozens: row thirds, 1 – 12, 13 – 24, 25 – 36 | chances of winning are 31.6%  Payout is * 3 ");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write(" Choose  a row |first|second|third  : ");
@@ -220,7 +246,12 @@ namespace Rorlette
                 Console.WriteLine("You choose Columns: first, second, or third columns | chances of winning are 32.40%  Payout is * 3 ");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write(" Choose  a column |first|second|third  : ");
@@ -251,13 +282,18 @@ namespace Rorlette
                 Console.WriteLine("You choose Street: rows,  1/2/3 or 22/23/24 | chances of winning are 7.9%  Payout is * 11");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("Choose a row 1/2/3|a| or 22/23/24|b| type a or b : ");
                 string Twopicked = Console.ReadLine();
-                Random GG = new Random();
-                int nextpick = numbers[GG.Next(numbers.Length)];
+                
+                int nextpick = numbers[AA.Next(numbers.Length)];
                 Console.WriteLine("You landed on " + nextpick + " " + colors[AA.Next(colors.Length)]);
 
                 if ((Twopicked.ToLower() == "a" && nextpick <= 3) || (Twopicked.ToLower() == "b" && nextpick >= 22 && nextpick <= 24))
@@ -281,7 +317,12 @@ namespace Rorlette
                 Console.WriteLine("You choose 6 Numbers: double rows,  1/2/3/4/5/6 or 22/23/24/25/26/26 | chances of winning are 15.8%  Payout is * 5");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("Choose a row 1/2/3/4/5/6|a| or 22/23/24/25/26/27|b| type a or b : ");
@@ -312,7 +353,12 @@ namespace Rorlette
                 Console.WriteLine("You choose Split: at the edge of any two contiguous numbers,  1/2, 11/14, and 35/36  | chances of winning  5.4%  Payout is * 17 ");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
                 Console.Write("Choose a edge  1/2|a| or 11/14|b| or 35/36|c| type a or b or c : ");
@@ -344,10 +390,15 @@ namespace Rorlette
                 Console.WriteLine("You choose Corner: at the intersection of any four contiguous numbers,  1/2/4/5, or 23/24/26/27 | chances or winning  10.5%  Payout is * 8");
                 Console.WriteLine("");
                 Console.Write("You have " + chips + " chips how much would you like to put in ? : ");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                int answer;
+                while (!Int32.TryParse(Console.ReadLine(), out answer))
+                {
+                    Console.Write("Enter a number lesser or equal to your chips :");
+                    Console.WriteLine("");
+                }
                 chips = chips - answer;
                 Console.WriteLine("");
-                Console.Write("Choose a intersection  1,2,4,5|a| or 23,24,26,27 type a or b  : ");
+                Console.Write("Choose a intersection  1,2,4,5|a| or |b|23,24,26,27 type a or b  : ");
                 string Twopicked = Console.ReadLine();
                 Random JJ = new Random();
                 int nextpick = numbers[JJ.Next(numbers.Length)];
